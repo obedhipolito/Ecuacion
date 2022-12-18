@@ -1,0 +1,36 @@
+<div class="contenedor1">
+    <h1>Ecuacion a resolver: y = ax+b</h1>
+
+    <form>
+      <div class="input">
+        <span class="icon-input"><i>x</i></span>
+        <input type="text" [(ngModel)]="array" class="data-input" name="array">
+      </div>
+
+      <div>
+        <span class="icon-input1"><i>a</i></span>
+        <input type="number" [(ngModel)]="a"  class="data-input" name="a"
+          placeholder="0.0" />
+      </div>
+
+      <div>
+        <span class="icon-input2"><i>b</i></span>
+        <input type="number" [(ngModel)]="b"  class="data-input" name="b"
+          placeholder="0.0" />
+      </div>
+    </form>
+  
+    <div class="gruop-buttons">
+      <div class="button" (click)="y()">
+        <i>Calcular<Main></Main></i>
+      </div>
+    </div>
+  
+    <div id="result-box">
+      <div class="container">
+        <div class=" resultS"><span>Resultado de la ecuacion: </span></div>
+        <div class=" result">{{Result}}</div>
+      </div>
+    </div>
+  </div>
+  
